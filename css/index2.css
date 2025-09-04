@@ -31,6 +31,7 @@ body{
   background-color: #fff;
 }
 
+/* Top________________________________________________________ */
 /* top button */
 .goto-top{
   position: fixed;
@@ -52,7 +53,7 @@ body{
   height: auto;  /* 비율 유지 */
 }
 
-/* header________________________________________________ */
+/* Header________________________________________________ */
 
 header{
   position: fixed;
@@ -92,7 +93,7 @@ header{
   height: 55px;
   text-align: center;
   line-height: 55px;
-  font-size: 19px;
+  font-size: 21px;
   font-weight: 500;
   color: slategray;
   overflow: hidden;
@@ -120,7 +121,7 @@ header{
 
 
 
-/* main________________________________________________ */
+/* Main________________________________________________________ */
 
 main{
   width: 100%;
@@ -390,70 +391,6 @@ main .SB:after{
   opacity: 0.65;
 }
 
-/* _____________________________배경웨이브 */
-/*.bg-wave {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  z-index: 0;
-  overflow: hidden;
-}*/
-
-/* 부드러운 웨이브 레이어 2개 */
-/*.bg-wave::before,
-.bg-wave::after {
-  content: "";
-  position: absolute;
-  width: 180%;
-  height: 180%;
-  top: -40%; left: -40%;
-  border-radius: 40%;
-  filter: blur(70px);
-  opacity: 0.35;
-  animation: softwave 28s ease-in-out infinite alternate;
-}*/
-
-/* 웜톤 라일락 웨이브 (보라빛 살짝) */
-/*.bg-wave::before {
-  background: radial-gradient(circle at 30% 30%, #d6c6ff 0%, transparent 70%);
-}*/
-
-/* 피치-베이지 웨이브 (기존 배경과 자연스러운 톤) */
-/*.bg-wave::after {
-  background: radial-gradient(circle at 70% 70%, #ffe2d6 0%, transparent 70%);
-  animation-delay: 10s;
-}
-
-@keyframes softwave {
-  0%   { transform: rotate(0deg) scale(1); }
-  50%  { transform: rotate(40deg) scale(1.1); }
-  100% { transform: rotate(80deg) scale(1); }
-}*/
-
-/* ______________________________타이핑 */
-/* .typing {
-  display: inline-block;
-  font-size: 24px;
-  font-weight: 500;
-  white-space: nowrap;     
-  border-right: 2px solid #6941ff; 
-  width: 0;               
-  overflow: hidden;
-  line-height: 1;
-  animation: typing 4s steps(30, end) forwards, blink 0.7s step-end infinite;
-} */
-
-/* 글자 나타나는 애니메이션 */
-/* @keyframes typing {
-  from { width: 0 }
-  to   { width: 29% }
-} */
-
-/* 커서 깜빡임 */
-/* @keyframes blink {
-  from, to { border-color: transparent }
-  50%      { border-color: #6941ff }
-} */
 
 
 /* Section________________________________________________________ */
@@ -461,6 +398,8 @@ main .SB:after{
 section{
   scroll-margin-top: 80px;
 }
+/* ================= Section 1 : 사운드바 ================= */
+
 .section-USP { 
   width: min(100%, var(--container)); 
   margin: 100px auto; 
@@ -658,15 +597,6 @@ section{
   object-fit:contain;
 }
 
-/*.selling-point img{
-  display:block;
-  height:46px;        
-  width:auto;
-  border: 1px solid #000;
-  object-fit:contain;
-  filter: brightness(1) contrast(1.05);
-}*/
-
 /* 카드 본문 */
 .selling-point p{
   margin-top: 15px;
@@ -745,126 +675,29 @@ background-color: snow
   box-shadow: 0 5px 12px rgba(0,0,0,0.1);
 }
 
-/* 반응형 */
-/*@media (max-width: 900px){
-  .selling-points{ grid-template-columns: 1fr; }
-  .selling-point{ border-right:none; }
-  .selling-point:not(:last-child){ border-bottom:1px solid rgba(255,255,255,.08); }
-  .section-USP .button{ flex-direction:column; }
-}*/
+/* ================= Section 2 : 가입혜택 ================= */
 
-
-/* 02________________________________ */
-
-/*#s1 .content2{
-  background-color: #685955;
-  width: 100%;
-}
-#s1 .content2 .c2{
-  border: 1px solid #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 1300px;
-  margin: 100px auto;
-}
-#s1 .content2 .c2 div{
-  border: 1px solid red;
-  width: 80%;
-  height: 500px;
-  background-color: #eee1dd;
-  margin: 20px 0;
-  border-radius: 30px;
-}
-
-#s1 .content3{
-  background-color: #f0e8e6;
-  width: 100%;
-}
-
-#s1 .content3 .c3{
-  border: 1px solid #000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 1300px;
-  margin: 100px auto;
-}
-#s1 .content3 .c3 div{
-  border: 1px solid red;
-  width: 550px;
-  height: 500px;
-  background-color: beige;
-  border-radius: 30px;
-}
-
-
-#s1 .content4{
-  width: 100%;
-}
-#s1 .content4 .c4{
-  border: 1px solid #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 1300px;
-  margin: 100px auto;
-}
-#s1 .content4 .c4 div{
-  border: 1px solid red;
-  width: 550px;
-  height: 500px;
-  background-color: beige;
-  border-radius: 30px;
-}*/
-
-/* 디버그 보더 제거 */
-/*#s1 .content2 .c2,
-#s1 .content3 .c3,
-#s1 .content4 .c4,
-#s1 .content2 .c2 div,
-#s1 .content3 .c3 div,
-#s1 .content4 .c4 div{
-  border: 0;
-}*/
-
-/* 공통 카드 스타일(둥근 모서리 + 그림자 + 부드러운 배경) */
-/*#s1 .content2 .c2 div,
-#s1 .content3 .c3 div,
-#s1 .content4 .c4 div{
-  background: var(--card-bg);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  overflow: hidden;
-}*/
-
-/* ========== content2 : 1열 스택(설명/비주얼 섹션) ========== */
-/* ===== content2 전체 톤 (시안 배경) ===== */
-#s1 .content2{
+#s2 .content2{
   /*border: 1px solid #000;*/
   background: linear-gradient(to top, rgba(245, 229, 224, 1), rgba(240, 232, 230, 1));
   padding: 0 0 50px;
 }
-#s1 .content2 .c2,{
+#s2 .content2 .c2{
   width:min(100%, var(--container, 1200px));
   margin:0 auto;
   padding:0 24px;
 }
-#s1 .content2 .card-grid{
+#s2 .content2 .card-grid{
   display:grid;
   grid-template-columns:1fr; 
-  gap: 35px;
+  gap: 50px;
   margin-bottom: 50px;
 }
 
 /* ===== 카드 프레임 ===== */
-#s1 .content2 .card,
-#s1 .content2 .card2,
-#s1 .content2 .card3{
+#s2 .content2 .card,
+#s2 .content2 .card2,
+#s2 .content2 .card3{
   border: 1px solid #E0D4D0;
   background: #f7f2f0;
   border-radius: 28px;
@@ -873,40 +706,8 @@ background-color: snow
   text-align: center;
 }
 
-
-/*#s1 .content2 .card-title::before,
-#s1 .content2 .card-title::after{
-  content:"";
-  position:absolute;
-  top:0; bottom:0;
-  width:26px;                       
-  background:#5b473b;
-}
-#s1 .content2 .card-title::before{
-  left:-26px; border-radius:18px 0 0 18px;
-}
-#s1 .content2 .card-title::after{
-  right:-26px; border-radius:0 18px 18px 0;
-}*/
-/* 보이는 텍스트에 괄호 추가 (시안 `[런칭 이벤트]`) */
-/*#s1 .content2 .card-title{ 
-  padding:14px 28px; 
-}*/
-#s1 .content2 .card-title::marker{ content:none; }
-#s1 .content2 .card-title{ }
-#s1 .content2 .card-title:before{ }
-#s1 .content2 .card-title:after{ }
-#s1 .content2 .card-title{ }
-#s1 .content2 .card-title span{ }
-
-/* 텍스트 자체에 대괄호를 입히려면 아래 한 줄만: 
-   (원문 텍스트를 그대로 두고 싶을 때 사용) */
-/* #s1 .content2 .card-title { --t:"런칭 이벤트"; }
-#s1 .content2 .card-title::after{ content:"]"; right:-12px; background:none; }
-#s1 .content2 .card-title::before{ content:"["; left:-12px; background:none; } */
-
 /* ===== 상단 라운드 직사각형 배너===== */
-#s1 .content2 .card-title{
+#s2 .content2 .card-title{
   display:inline-block;
   background: linear-gradient(90deg,#7b44f6 0%, #9b5cff 50%, #d59fff 100%);
   width: 860px;
@@ -924,15 +725,15 @@ background-color: snow
 }
 
 /* ===== 메인 타이틀(그라디언트) + 서브 타이틀 ===== */
-#s1 .content2 .card-title2{
+#s2 .content2 .card-title2{
   font-family: 'Paperozi';
   margin:12px 0 10px;
-  line-height:1.15;
-  font-size: 52px;
+  line-height:1.3;
+  font-size: 54px;
   font-weight:600;
   color:#3b2a21;
 }
-#s1 .content2 .card-grid .gd-text{
+#s2 .content2 .card-grid .gd-text{
   font-family: 'Paperozi';
   display:inline-block;
   font-size:54px; 
@@ -944,27 +745,23 @@ background-color: snow
 }
 
 /* ===== 중앙 이미지 (가운데 배치, 둥근 코너) ===== */
-#s1 .content2 .card-image{
+#s2 .content2 .card-image{
   background:transparent;
   margin:50px auto 0;
   max-width:620px;    
   border-radius:16px;
   overflow:hidden;
 }
-#s1 .content2 .card-image img{
+#s2 .content2 .card-image img{
   width: 100%;
   height: 100%;
   object-fit: cover; 
   display: block;
 }
-/*#s1 .content2 .card2-image img{
-  display:block; width:100%; height:auto;
-}*/
-
 
 
 /* ===== 하단 정보 박스 ===== */
-#s1 .content2 .card-content{
+#s2 .content2 .card-content{
   background:#ebe7e6;
   border-radius:16px;
   padding:22px 54px;
@@ -972,17 +769,17 @@ background-color: snow
   max-width:860px;
   box-shadow:0 2px 6px rgba(0,0,0,.05);
 }
-#s1 .content2 .card-content .row{
+#s2 .content2 .card-content .row{
   display:flex;
   align-items:center;
   gap:16px;
   padding:10px 0;
   border-bottom:1px solid rgba(0,0,0,.06);
 }
-#s1 .content2 .card-content .row:last-child{
+#s2 .content2 .card-content .row:last-child{
   border-bottom:none;
 }
-#s1 .content2 .card-content span{
+#s2 .content2 .card-content span{
   background:#6941ff;                /* 다크 칩 */
   color:#fff;
   font-size:20px;
@@ -992,7 +789,7 @@ background-color: snow
   /*line-height:1;*/
   flex:0 0 auto;
 }
-#s1 .content2 .card-content p{
+#s2 .content2 .card-content p{
   margin:0;
   font-size:22px;
   font-weight:500;
@@ -1000,12 +797,10 @@ background-color: snow
   line-height:1.55;
 }
 
-
 /* ---------------- 카드2 ---------------- */
 
-
 /* 상단 배너 */
-#s1 .content2 .card2-title{
+#s2 .content2 .card2-title{
   display:inline-flex;
   align-items:center;
   gap:10px;
@@ -1019,7 +814,7 @@ background-color: snow
   border-radius:40px;
   margin-bottom:40px;
 }
-#s1 .content2 .card2-title span{
+#s2 .content2 .card2-title span{
   border: 4px solid #7b44f6;
   background:#fff;
   color:#6a34ff;
@@ -1033,7 +828,7 @@ background-color: snow
 }
 
 /* 이미지 3개 + 플러스 */
-#s1 .content2 .card2-images{
+#s2 .content2 .card2-images{
   width: fit-content;
   padding: 20px 50px;
   display:flex;
@@ -1043,11 +838,11 @@ background-color: snow
   margin: 20px auto 50px;
   scale: 1.3;
 }
-#s1 .content2 .card2-images .c2-item {
+#s2 .content2 .card2-images .c2-item {
   /*border: 1px solid #000;*/
   text-align:center;
 }
-#s1 .content2 .card2-images img {
+#s2 .content2 .card2-images img {
   background-color: #fff;
   border: 1px solid #d8d8d8;
   border-radius: 20px;
@@ -1057,7 +852,7 @@ background-color: snow
   object-fit:contain;
   margin-bottom:10px;
 }
-#s1 .content2 .card2-images p{
+#s2 .content2 .card2-images p{
   background-color: #3d2f74;
   border-radius: 35px;
   height: 35px;
@@ -1066,7 +861,7 @@ background-color: snow
   color:#fff;
   line-height: 35px;
 }
-#s1 .content2 .card2-images .c2-plus {
+#s2 .content2 .card2-images .c2-plus {
   font-size:45px;
   font-weight:700;
   color:#6a34ff;
@@ -1075,7 +870,7 @@ background-color: snow
 }
 
 /* 가격 영역 */
-#s1 .content2 .card2-content .c2-price-row {
+#s2 .content2 .card2-content .c2-price-row {
   border: 4px solid #ff2d75;
   background-color: #fff;
   border-radius: 16px;
@@ -1089,11 +884,12 @@ background-color: snow
   font-size:22px;
   margin:20px auto 10px;
 }
-#s1 .content2 .card2-content .c2-old {
+#s2 .content2 .card2-content .c2-old {
   text-decoration:line-through;
   color:#999;
+  font-weight: 500;
 }
-#s1 .content2 .card2-content .c2-new {
+#s2 .content2 .card2-content .c2-new {
   color:#ff2d75;
   font-size:30px;
   font-weight:800;
@@ -1104,13 +900,13 @@ background-color: snow
     opacity: 0;
   }
 }
-#s1 .content2 .card2-content .c2-arrow {
+#s2 .content2 .card2-content .c2-arrow {
   font-weight:600;
-  color:#333;
+  color:#ff2d75;
 }
 
 /* 임대료 표 */
-#s1 .content2 .card2-table {
+#s2 .content2 .card2-table {
   margin-top:20px;
   background:#fff;          
   border-radius:16px;
@@ -1119,35 +915,36 @@ background-color: snow
   max-width:860px;
   box-shadow:0 2px 6px rgba(0,0,0,.05);
 }
-#s1 .content2 .card2-table p {
+#s2 .content2 .card2-table p {
   font-size:23px;
   font-weight:600;
   margin-bottom:12px;
 }
-#s1 .content2 .card2-table table {
+#s2 .content2 .card2-table table {
   width:100%;
   border-collapse:collapse;
   font-size:17px;
 }
-#s1 .content2 .card2-table th,
-#s1 .content2 .card2-table td {
+#s2 .content2 .card2-table th,
+#s2 .content2 .card2-table td {
   border:1px solid #ddd;
   padding:10px;
 }
-#s1 .content2 .card2-table th {
+#s2 .content2 .card2-table th {
   background:#f3edea;
   font-weight:700;
 }
-#s1 .content2 .card2-table td {
+#s2 .content2 .card2-table td {
   background:#fff;
 }
-#s1 .content2 .card2-table tbody td:first-child {
+#s2 .content2 .card2-table tbody td:first-child {
   background:#f7f2f0;
   font-weight:600;
 }
 
-/* ---------------------------------------03 */
-#s1 .content2 .card3-title{
+/* ---------------- 카드3 ---------------- */
+
+#s2 .content2 .card3-title{
   display:inline-flex;
   align-items:center;
   gap:10px;
@@ -1162,7 +959,7 @@ background-color: snow
   border-radius:40px;
   margin-bottom:40px;
 }
-#s1 .content2 .card3-title span{
+#s2 .content2 .card3-title span{
   border: 4px solid #7b44f6;
   background:#fff;
   color:#6a34ff;
@@ -1174,15 +971,15 @@ background-color: snow
   border-radius:50px;
   margin-right: 20px;
 }
-#s1 .content2 .card3-title2{
+#s2 .content2 .card3-title2{
   font-family: 'Paperozi';
   margin:12px 0 10px;
-  line-height:1.15;
-  font-size: 52px;
+  line-height:1.3;
+  font-size: 54px;
   font-weight:600;
   color:#3b2a21;
 }
-#s1 .content2 .card3-title2 strong{
+#s2 .content2 .card3-title2 strong{
   font-family: 'Paperozi';
   display:inline-block;
   font-size:54px; 
@@ -1192,7 +989,7 @@ background-color: snow
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
 }
-#s1 .content2 .card3-image{
+#s2 .content2 .card3-image{
   background:transparent;
   margin:50px auto 0;
   object-fit: cover;  
@@ -1201,12 +998,12 @@ background-color: snow
   justify-content: center;
   align-items: center;
 }
-#s1 .content2 .card3-image img{
+#s2 .content2 .card3-image img{
   width:400px;
   height: auto;
   margin: 30px auto 0;
 }
-#s1 .content2 .card3-content{
+#s2 .content2 .card3-content{
   background:#ebe7e6;
   border-radius:16px;
   padding:22px 54px;
@@ -1214,7 +1011,7 @@ background-color: snow
   max-width:780px;
   box-shadow:0 2px 6px rgba(0,0,0,.1);
 }
-#s1 .content2 .card3-content .row{
+#s2 .content2 .card3-content .row{
   display:flex;
   justify-content: center;
   align-items:center;
@@ -1223,24 +1020,24 @@ background-color: snow
   line-height: 1.3;
   border-bottom:1px solid rgba(0,0,0,.06);
 }
-#s1 .content2 .card3-content .row:last-child{
+#s2 .content2 .card3-content .row:last-child{
   border-bottom:none;
 }
-#s1 .content2 .card3-content p{
+#s2 .content2 .card3-content p{
   font-size: 25px;
   font-weight:600;
   color:#3b2a21;
   margin: auto;
 }
-#s1 .content2 .card3-content span{
+#s2 .content2 .card3-content span{
   letter-spacing: -1px;
   font-weight: 700;
   color: #3d2f74;
 }
-#s1 .content2 .card3-content b{
+#s2 .content2 .card3-content b{
   color: #ff2d75;
 }
-#s1 .content2 .card3-content2{
+#s2 .content2 .card3-content2{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1248,14 +1045,14 @@ background-color: snow
   width: 780px;
   margin: 50px 0 0 120px;
 }
-#s1 .content2 .card3-image2{
+#s2 .content2 .card3-image2{
   background:transparent;
   border-radius:16px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#s1 .content2 .card3-image2 img{
+#s2 .content2 .card3-image2 img{
   background-color: #fff;
   border-radius: 20px 0 0 20px;
   margin: auto;
@@ -1265,7 +1062,7 @@ background-color: snow
   object-fit: cover;
   box-shadow:0 2px 6px rgba(0,0,0,.05);
 }
-#s1 .content2 .card3-row{
+#s2 .content2 .card3-row{
   background-color: rgb(245, 239, 255);
   height: 350px;
   width: auto;
@@ -1277,20 +1074,20 @@ background-color: snow
   padding: 15px 60px;
   box-shadow:0 2px 6px rgba(0,0,0,.05);
 }
-#s1 .content2 .card3-row .row{
+#s2 .content2 .card3-row .row{
   text-align: left;
   margin-top: 20px;
 }
-#s1 .content2 .card3-row span{
+#s2 .content2 .card3-row span{
   /*border: 1px solid #00ff80;*/
   color: #6a34ff;
   font-size: 28px;
   font-weight: 700;
 }
-#s1 .content2 .card3-row .row p{
+#s2 .content2 .card3-row .row p{
   margin-top: 10px;
 }
-#s1 .content2 .card3-row figure{
+#s2 .content2 .card3-row figure{
   background-color: rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
@@ -1300,353 +1097,353 @@ background-color: snow
   padding: 0 30px;
   border-radius: 30px;
 }
-#s1 .content2 .card3-row figure img{
+#s2 .content2 .card3-row figure img{
   margin: 15px auto 10px;
   width: 80px;
   height: auto;
   transition: 0.5s;
 }
-#s1 .content2 .card3-row figure img:hover{
+#s2 .content2 .card3-row figure img:hover{
   transform: rotateY(360deg);
 }
 
 
-/* ================= Section 3 : 혜택 카드 ================= */
+/* ================= Section 3 : KT혜택 ================= */
 
-
-#s3 .content3 {
-  border: 1px solid rgba(245, 229, 224, 1);
+#s3 {
   background: rgba(245, 229, 224, 1);
-  padding: 0 0 200px;
-}
-#s3 .card3-title3{
+  padding: 30px 0 100px;
   text-align: center;
-  max-width: 960px;
-  margin: 30px auto 0;
-  font-size: 54px;
-  letter-spacing: -2px;
 }
-#s3 .card3-title3 ul .c3-main-title{
+
+/* 상단 타이틀 */
+#s3 .card3-title3 {
+  margin-bottom: 100px;
+}
+#s3 .c3-main-title {
+  font-size: 54px; /* 원본 크기 살림 */
   font-weight: 700;
-  color: #333;
   line-height: 1.3;
   margin-bottom: 20px;
+  letter-spacing: -2px; /* 원본 효과 */
+  color: #333;
 }
-#s3 .card3-title3 ul .c3-main-title b{
+#s3 .c3-main-title b {
   color: #ff2d75;
-  font-weight: 800;
+  font-weight: 800; /* 원본 효과 */
 }
-#s3 .card3-title3 ul .c3-sub-title{
-  font-size: 34px;
+#s3 .c3-sub-title {
+  font-size: 34px; /* 원본 크기 */
   color: #333333;
+  letter-spacing: -2px;
 }
+
+/* 카드 그리드 */
 #s3 .c3 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
+  gap: 30px;
   max-width: 1100px;
-  margin: 0 auto;
+  margin: auto;
   padding: 0 24px;
 }
 
 /* 카드 공통 */
-.benefit-card {
+#s3 .benefit-card {
   background: #fff;
   border-radius: 20px;
   padding: 40px 30px;
   text-align: center;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  transition: transform .3s ease, box-shadow .3s ease;
+  transition: transform .3s ease, box-shadow .3s ease, color .3s ease;
 }
-.benefit-card:hover {
+#s3 .benefit-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+  background-image: linear-gradient(135deg, #FF003C, #FF512F, #FF6A00); /* 원본 hover 배경 */
 }
 
 /* 카드 헤더 */
-.benefit-card .card-header {
-  /*margin-bottom: 24px;*/
-}
-.benefit-card .badge {
+#s3 .benefit-card .badge {
   display: inline-block;
   background: #fff;
-  border: 3px solid #6941ff;
+  border: 3px solid #6941ff; /* 원본 두께 */
   color: #6941ff;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 18px; /* 원본 크기 */
   border-radius: 40px;
   padding: 6px 22px;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   transition: 0.35s;
 }
-.benefit-card:hover .badge{
-  scale: 1.1;
+#s3 .benefit-card:hover .badge {
+  scale: 1.1; /* 원본 hover 효과 */
 }
-.benefit-card:hover{
-/*background-image: linear-gradient(0deg,#0028FF, #005BFF, #00C6FF);
-box-shadow: 0 5px 18px rgba(0, 0, 0, 0.7);*/
-background-image: linear-gradient(135deg, #FF003C, #FF512F, #FF6A00);
-
-}
-.benefit-card .title {
+#s3 .benefit-card .title {
   font-family: 'Paperozi';
-  font-size: 34px;
+  font-size: 34px; /* 원본 크기 */
   font-weight: 700;
   color: #3b2a21;
   margin-top: 20px;
   transition: 0.35s;
 }
-
-.benefit-card:hover .title{
+#s3 .benefit-card:hover .title {
   color: #fff;
-  scale: 1.2;
-}
-.benefit-card:hover .desc{
-  color: #fff;
-  scale: 1.1;
+  scale: 1.2; /* 원본 hover 효과 */
 }
 
 /* 이미지 */
-.benefit-card .card-image {
+#s3 .benefit-card .card-image {
   margin: 20px auto;
-  max-width: 260px;
+  max-width: 260px; /* 원본 크기 */
   transition: 0.35s;
 }
-.benefit-card:hover .card-image{
-  scale: 1.1;
-}
-.benefit-card .card-image img {
+#s3 .benefit-card .card-image img {
   width: 100%;
   height: auto;
   display: block;
 }
+#s3 .benefit-card:hover .card-image {
+  scale: 1.1; /* 원본 hover 효과 */
+}
 
 /* 설명 */
-.benefit-card .desc {
-  font-size: 23px;
+#s3 .benefit-card .desc {
+  font-size: 23px; /* 원본 크기 */
   font-weight: 500;
   color: #333;
   line-height: 1.3;
+  transition: 0.35s;
 }
-.benefit-card .desc strong {
+#s3 .benefit-card .desc strong {
   color: #ff2d75;
-  font-size: 26px;
+  font-size: 26px; /* 원본 크기 */
+  transition: 0.35s;
 }
-.benefit-card:hover .desc strong{
-  color: yellow;
-}
-.benefit-card .desc span{
+#s3 .benefit-card .desc span {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 18px; /* 원본 크기 */
+  color: #777;
+}
+#s3 .benefit-card:hover .desc,
+#s3 .benefit-card:hover .desc span {
+  color: #fff;
+  scale: 1.1; /* 원본 hover 효과 */
+}
+#s3 .benefit-card:hover .desc strong {
+  color: yellow; /* 원본 hover 효과 */
 }
 
-/* ========== content4 : 2열 그리드(3행 이상) ========== */
+/* CTA 버튼 */
+#s3 .s3-cta-btn button {
+  margin-top: 120px;
+  border: none;
+  width: 700px;
+  height: 80px;
+  border-radius: 50px;
+  font-size: 26px;
+  font-weight: 500;
+  cursor: pointer;
+  background: linear-gradient(135deg, #FF003C, #FF512F, #FF6A00);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform .3s ease;
+}
+#s3 .s3-cta-btn button:hover {
+  transform: translateY(-4px);
+}
 
-#s4 .content4{
+
+/* ================= Section 4 : 결합 혜택 ================= */
+
+#s4 {
   background: linear-gradient(
-  180deg,
-  rgb(245, 229, 224) 0%, 
-  rgb(240, 210, 205) 50%, 
-  rgb(230, 185, 175) 100%   
+    180deg,
+    rgb(245, 229, 224) 0%, 
+    rgb(240, 210, 205) 50%, 
+    rgb(230, 185, 175) 100%
   );
-  width: 100%;
-  height: 1250px;
-  padding: 30px 0 96px;
-}
-#s4 .content4 .c4{
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 30px;
-}
-#s4 .content4 .c4 div{
-  background-color: #fff;
-  border-radius: 20px;
-  width: inherit;
-  height: inherit;
-}
-#s4 .card4-title{
+  padding: 70px 0 150px;
   text-align: center;
-  max-width: 960px;
-  margin: auto;
-  font-size: 54px;
-  letter-spacing: -2px;
 }
-#s4 .card4-title ul .c4-main-title{
+
+/* 상단 타이틀 */
+#s4 .card4-title {
+  margin-bottom: 100px;
+}
+#s4 .c4-main-title {
+  font-size: 54px; /* 원본 크기 유지 */
   font-weight: 700;
-  color: #3b2a21;
   line-height: 1.3;
   margin-bottom: 20px;
-}
-#s4 .card4-title ul .c4-main-title b{
-  color: #ff2d75;
-  font-weight: 800;
-}
-#s4 .card4-title ul .c4-sub-title{
-  font-size: 34px;
+  letter-spacing: -2px;
   color: #3b2a21;
 }
-#s4 .card4-title ul .c4-sub-title b{
+#s4 .c4-main-title b {
+  color: #ff2d75;
+  font-weight: 800; /* 원본 강조 */
+}
+#s4 .c4-sub-title {
+  font-size: 34px; /* 원본 크기 */
+  color: #3b2a21;
+  letter-spacing: -2px;
+}
+#s4 .c4-sub-title b {
   font-weight: 500;
 }
 
-/* 01 */
-#s1 .content4 .c4_card1{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 20px;
-  text-align: start;
-  padding: 50px 40px 10px 40px;
+/* 카드 그리드 */
+#s4 .c4 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto 50px;
+  padding: 0 24px;
 }
-#s1 .content4 .c4_card1 figure img{
-  display: block;
-  border-radius: 30px;
-  margin: auto;
-  padding: 20px;
-  width: 350px;
-}
-#s1 .content4 .c4_title{
-  font-family: 'Paperozi';
-  font-size: 40px;
-  font-weight: 700;
-  text-align: center;
-  width: auto;
-  margin: auto;
-  background: linear-gradient(90deg,
-    #4f2dff 0%, #6941ff 35%, #8c66ff 65%, #ff6fb1 100%);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
-}
-#s1 .content4 .card-price{
-  font-size: 22px;
-  font-weight: 500;
-  margin-bottom: 40px;
-}
-#s1 .content4 .card-price ul{
+
+/* 카드 */
+#s4 .benefit-card {
+  background: #fff;
   border-radius: 20px;
-  background-color: #eeecec;
-  padding: 20px;
+  padding: 80px 30px 40PX;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform .3s ease, box-shadow .3s ease, color .3s ease;
 }
-#s1 .content4 .card-price ul li:first-child{
-  color: inherit;
-  font-size: 21px;
+#s4 .benefit-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+  background-image: linear-gradient(180deg, #0028FF, #005BFF, #00C6FF);
 }
-#s1 .content4 .card-price ul li:first-child b {
-  font-size: 21px;
-  font-weight: 500;
-  color:#999;
-  text-decoration:line-through;
+#s4 .benefit-card .title {
+  font-family: 'Paperozi';
+  font-size: 40px; /* 원본 폰트 */
+  font-weight: 700;
+  margin-bottom: 20px;
+  transition: 0.35s;
 }
-#s1 .content4 .card-price ul li:nth-child(2) b {
-  font-size: 21px;
-  color: inherit;
-}
-
-#s1 .content4 .card-price ul b{
-  color: red;
-  font-size: 25px;
-}
-#s1 .content4 .card-price ul span{
-  font-size: 18px;
+#s4 .benefit-card:hover .title {
+  color: #fff;
+  scale: 1.1; /* 원본 hover 효과 */
 }
 
-
-/* 02 */
-
-#s1 .content4 .c4_card2{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: start;
-  padding: 50px 40px 10px 40px;
+/* 이미지 */
+#s4 .benefit-card .card-image {
+  margin: 20px auto;
+  max-width: 350px; /* 원본 기준 */
+  transition: 0.35s;
 }
-#s1 .content4 .c4_card2 figure img{
+#s4 .benefit-card .card-image img {
+  width: 100%;
+  height: auto;
   display: block;
+  border-radius: 20px;
+}
+#s4 .benefit-card .card-image2 img{
+display: block;
   border-radius: 25px;
   margin: auto;
-  padding: 17px 0 0 15px;
+  padding: 20px 0 0 0;
   width: 450px;
 }
-#s1 .content4 .c4_title{
-  font-family: 'Paperozi';
-  font-size: 40px;
-  font-weight: 700;
-  text-align: center;
-  background: linear-gradient(90deg,
-    #4f2dff 0%, #6941ff 35%, #8c66ff 65%, #ff6fb1 100%);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
+#s4 .benefit-card:hover .card-image,
+#s4 .benefit-card:hover .card-image2 {
+  scale: 1.05; /* 원본 hover 효과 */
 }
-#s1 .content4 .card-price{
-  font-size: 22px;
-  font-weight: 500;
-  margin-bottom: 40px;
-}
-#s1 .content4 .card-price ul{
-  /* border: 1px solid red; */
-  border-radius: 20px;
-  background-color: #eeecec;
+
+/* 가격 리스트 */
+#s4 .price-list {
+  margin-top: 20px;
+  font-size: 24px;
   padding: 20px;
-}
-#s1 .content4 .card-price ul b{
-  color: red;
-  font-size: 25px;
-}
-#s1 .content4 .card-price ul span{
-  font-size: 18px;
-}
-
-
-/* ---------------------------버튼--------------------- */
-button[name=cta-btn1]{
-  border: 1px solid rgba(255, 255, 255, 0);
-  position: absolute;
-  left: 32%;
-  width: 700px;
-  height: 70px;
-  border-radius:70px;
+  background: #f6f2f0;
+  border-radius: 16px;
+  line-height: 1.6;
   text-align: center;
-  font-size: 26px;
+}
+#s4 .price-list2 {
   margin-top: 50px;
-  background:linear-gradient(135deg, #FF003C, #FF512F, #FF6A00);
-  color: #fff;
-  font-weight: 600;
-  cursor: pointer;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
-  transition: 0.35s;
-}
-button[name=cta-btn1]:hover{
-  transform: translateY(-4px);
-}
-
-button[name=cta-btn2]{
-  border: 1px solid rgba(255, 255, 255, 0);
-  position: absolute;
-  left: 32%;
-  width: 700px;
-  height: 70px;
-  border-radius:70px;
+  font-size: 24px;
+  padding: 20px;
+  background: #f6f2f0;
+  border-radius: 16px;
+  line-height: 1.6;
   text-align: center;
-  font-size: 26px;
-  margin: 50px 0;
-  background:linear-gradient(135deg, #FF003C, #FF512F, #FF6A00);
-  color: #fff;
-  font-weight: 600;
-  cursor: pointer;
-  outline: none;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
-  transition: 0.35s;
 }
-button[name=cta-btn2]:hover{
+
+/* 정상가 */
+#s4 .price-list .normal,
+#s4 .price-list2 .normal {
+  color: #999;
+  font-weight: 500;
+}
+#s4 .price-list .old,
+#s4 .price-list2 .old {
+  text-decoration: line-through;
+  font-weight: 400;
+  margin-left: 6px;
+}
+
+/* 혜택가 */
+#s4 .price-list .discount,
+#s4 .price-list2 .discount {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  /* margin-bottom: 10px; */
+}
+#s4 .price-list .discount span,
+#s4 .price-list2 .discount span {
+  margin-left: 6px;
+}
+
+/* 최대혜택가 */
+#s4 .price-list .highlight,
+#s4 .price-list2 .highlight {
+  font-size: 30px;
+  font-weight: 700;
+  color: #ff2d75;
+}
+#s4 .price-list .highlight .strong,
+#s4 .price-list2 .highlight .strong {
+  display: block;
+  font-size: 28px; /* 가장 강조 */
+  font-weight: 800;
+  margin-top: 3px;
+}
+#s4 .price-list .highlight span,
+#s4 .price-list2 .highlight span {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+  margin-top: 1px;
+}
+
+/* CTA 버튼 (#s3 동일) */
+#s4 .s4-cta-btn {
+  margin-top: 120px;
+}
+#s4 .s4-cta-btn button {
+  border: none;
+  width: 700px;
+  height: 80px;
+  border-radius: 50px;
+  font-size: 26px;
+  font-weight: 500;
+  cursor: pointer;
+  background: linear-gradient(135deg, #FF003C, #FF512F, #FF6A00);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform .3s ease;
+}
+#s4 .s4-cta-btn button:hover {
   transform: translateY(-4px);
 }
 
+/* ---------------- footer ---------------- */
 
-
-
-/* footer */
 footer {
   background: #f8f8f8;   /* 은은한 배경 */
   padding: 20px 0;

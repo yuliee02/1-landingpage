@@ -2,6 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>지니TV 사운드바</title>
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
@@ -29,13 +30,20 @@
         <a href="#s3" data-link="KT혜택"></a>
         <a href="#s4" data-link="결합혜택"></a>
       </div>
+      <button class="hamburger" aria-label="메뉴 열기">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
+  
 <!-- ================== 메인 ================== -->
   <main>
       <div class="bg-wave" aria-hidden="true"></div>
       <h3 class="typing">셋톱, 무선공유기, AI스피커까지 디자인으로 다 담았다</h3>
-      <figure class="genieTV-logo"><img src="image/GenieTV_logo.png" alt="genieTV-logo" class="shimmering-img"><h1>셋톱박스 사운드바</h1>
+      <figure class="genieTV-logo"><img src="image/GenieTV_logo.png" alt="genieTV-logo" class="shimmering-img">
+        <h1>셋톱박스 사운드바</h1>
       </figure>
       <section class="icons-list">
         <h2 style="display: none;">제목</h2>
@@ -367,6 +375,28 @@
 </html>
 =======
 
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.querySelector(".hamburger");
+  const gnb = document.querySelector(".gnb");
+  const gnbLinks = document.querySelectorAll(".gnb a");
+
+  // 햄버거 클릭 → 메뉴 토글
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    gnb.classList.toggle("active");
+  });
+
+  // 메뉴 클릭 → 자동 닫힘
+  gnbLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      gnb.classList.remove("active");
+      hamburger.classList.remove("active");
+    });
+  });
+});
+</script>
 
 </body>
 

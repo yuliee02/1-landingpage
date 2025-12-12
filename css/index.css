@@ -1739,12 +1739,7 @@ footer address span {
   font-weight: 600;
   color: #333;
 }
-<<<<<<< HEAD
-=======
 
-<<<<<<< HEAD
->>>>>>> e9bf738 (이름수정)
-=======
 /* ================= Mobile tuning ================= */
 
 @media (max-width: 768px){
@@ -1784,4 +1779,3 @@ footer address span {
     font-size: 18px;
   }
 }
->>>>>>> 299a0c3 (반응형 버전 index로 적용)

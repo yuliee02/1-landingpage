@@ -1584,7 +1584,7 @@ footer address span {
   }
 
   main .genieTV-logo {
-    max-width: 90%;
+    max-width: 100%;
     overflow: hidden;
   }
 
@@ -1595,7 +1595,7 @@ footer address span {
   }
 
   main h1 {
-    font-size: 72px;
+    font-size: 52px;
     line-height: 1.2;
     word-break: keep-all;
     padding: 0 16px;
@@ -1700,7 +1700,7 @@ footer address span {
   }
 
   #s1 .section-inner .s1-title h2 {
-    font-size: 32px;
+    font-size: 28px;
     padding: 0 40px;
   }
 

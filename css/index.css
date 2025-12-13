@@ -1577,7 +1577,7 @@ footer address span {
   }
 
   main h3 {
-    font-size: 24px;
+    font-size: 18px;
     line-height: 1.5;
     padding: 120px 40px 50px 40px;
     word-break: keep-all;
@@ -1700,8 +1700,8 @@ footer address span {
   }
 
   #s1 .section-inner .s1-title h2 {
-    font-size: 36px;
-    padding: 0 70px;
+    font-size: 32px;
+    padding: 0 40px;
   }
 
   #s1 .section-inner .s1-title span {
@@ -1713,13 +1713,13 @@ footer address span {
   #s1 .section-inner .s1-title:before {
     scale: 60%;
     top: -90px;
-    left: 90px;
+    left: 70px;
   }
 
   #s1 .section-inner .s1-title:after {
     scale: 60%;
     top: -115px;
-    left: 160px;
+    left: 140px;
   }
 
   .selling-points {
@@ -1856,7 +1856,7 @@ footer address span {
     max-width: 100%;
     height: auto;
     padding: 10px 14px;
-    font-size: 22px;
+    font-size: 20px;
     border-radius: 50px;
     gap: 8px;
     word-break: keep-all;
@@ -1871,7 +1871,7 @@ footer address span {
     line-height: 1.4;
     padding: 8px 20px;
     margin-right: 8px;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
   }
 
@@ -1892,7 +1892,7 @@ footer address span {
   }
 
   #s2 .content2 .card2-images p {
-    font-size: 16px;
+    font-size: 14px;
     height: 30px;
     line-height: 30px;
   }

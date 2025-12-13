@@ -2005,7 +2005,7 @@ footer address span {
   }
 
   #s3 .c3-main-title {
-    font-size: 36px;
+    font-size: 32px;
     margin-bottom: 16px;
     word-break: keep-all;
     line-height: 1.3;
@@ -2130,8 +2130,73 @@ footer address span {
   }
   #s4 .price-list .highlight,
   #s4 .price-list2 .highlight{
-    font-size: 24px;
+    font-size: 19px;
   }
+
+
+
+/* 가격 리스트 */
+#s4 .price-list {
+  margin-top: 20px;
+  font-size: 24px;
+  padding: 20px;
+  background: #f6f2f0;
+  border-radius: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
+#s4 .price-list2 {
+  margin-top: 50px;
+  font-size: 24px;
+  padding: 20px;
+  background: #f6f2f0;
+  border-radius: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* 정상가 */
+#s4 .price-list .normal,
+#s4 .price-list2 .normal {
+  color: #999;
+  font-size: 17px;
+  font-weight: 500;
+}
+#s4 .price-list .old,
+#s4 .price-list2 .old {
+  text-decoration: line-through;
+  font-weight: 400;
+  margin-left: 6px;
+}
+
+/* 혜택가 */
+#s4 .price-list .discount,
+#s4 .price-list2 .discount {
+  font-size: 17px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* 최대혜택가 */
+#s4 .price-list .highlight,
+#s4 .price-list2 .highlight {
+  font-size: 19px;
+  font-weight: 700;
+  color: #0028FF;
+}
+#s4 .benefit-card:hover .highlight,
+#s4 .benefit-card:hover .highlight {
+  scale: 1.05;
+  color: #ff2d75;
+}
+#s4 .price-list .highlight span,
+#s4 .price-list2 .highlight span {
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  color: #666;
+  margin-top: 1px;
+}
 
   #s4 .s4-cta-btn {
     margin-top: 80px;
@@ -2149,4 +2214,5 @@ footer address span {
     padding: 16px 12px;
     font-size: 12px;
   }
+  
 }

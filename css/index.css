@@ -1448,6 +1448,7 @@ footer address span {
   color: #333;
 }
 
+<<<<<<< HEAD
 /* ================= Mobile 640px ================= */
 @media (max-width: 640px) {
   
@@ -1455,6 +1456,9 @@ footer address span {
   header {
     height: 60px;
   }
+=======
+/* ================= Mobile tuning ================= */
+>>>>>>> deb1d9147f29778e4de01a2da4be9b06dbbda860
 
   .logo {
     height: 25px;
@@ -1837,6 +1841,7 @@ footer address span {
   #s2 .content2 .card2-table p {
     font-size: 18px;
   }
+<<<<<<< HEAD
 
   #s2 .content2 .card2-table table {
     font-size: 13px;
@@ -2028,3 +2033,6 @@ footer address span {
     font-size: 12px;
   }
 }
+=======
+}
+>>>>>>> deb1d9147f29778e4de01a2da4be9b06dbbda860

@@ -1579,26 +1579,27 @@ footer address span {
   main h3 {
     font-size: 18px;
     line-height: 1.5;
-    padding: 120px 40px 50px 40px;
-    word-break: keep-all;
+    padding: 120px 110px 30px 110px;
+    /*word-break: keep-all;*/
   }
-
+  main figure {
+    padding: 50px 0;
+  }
   main .genieTV-logo {
-    max-width: 100%;
+    max-width: 300px;
+    width: 100%;
     overflow: hidden;
   }
 
   main .genieTV-logo img {
     height: auto;
     width: 100%;
-    max-width: 250px;
+    max-width: 200px;
   }
 
   main h1 {
-    font-size: 52px;
+    font-size: 40px;
     line-height: 1.2;
-    word-break: keep-all;
-    padding: 0 16px;
   }
 
   main .icons {
@@ -1609,11 +1610,14 @@ footer address span {
   }
 
   main .icons img {
-    height: 40px;
+    height: 35px;
   }
-
+  main .SB img {
+  max-width: 400px;
+  width: 100%;
+}
   main .SB:after {
-    max-width: 100%;
+    max-width: 500px;
     width: 90%;
   }
 
